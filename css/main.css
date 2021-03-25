@@ -39,7 +39,6 @@ body{
     display: inline-block;
 }
 .right-column {
-    display: inline-block;
     padding: 60px;
     float: left;
     width: 60%;
@@ -63,9 +62,47 @@ symbol {
 .form > .form-row > label {
     display: inline-block;
     width: 100%;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+
 }
 
 .form > .form-row > input {
     display: inline-block;
     width: 100%;
+    line-height: 35px;
+    font-size: 18px;
+    border: none;
+    border-bottom: solid 2px lightgrey;
+}
+
+.form > .form-row > button {
+    float: left;
+    background-color: #015CDA;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form > .form-row > span {
+    float: left;
+    padding: 10px 0px 10px 20px;
+    line-height: 15px;
+    font-size: 18px;
+}
+
+.form > .form-row > a {
+    float: left;
+    line-height: 15px;
+    padding: 10px 10px 10px 5px;
+    font-size: 18px;
+    color: #015CDA;
+    text-decoration: none;
 }
