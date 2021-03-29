@@ -15,24 +15,39 @@ body{
     margin-left: calc((100% - 800px) / 2);
     margin-right: calc((100% - 800px) / 2);
     margin-top: 100px;
+    position: relative;
 }
 .left-column {
     display: inline-block;
-    float: left;
     width: 40%;
-    background-color: #0051a9;
     padding: 40px;
+    position: absolute;
+    background-color: blue;
+    top: 30px;
+    left: 0;
+    bottom: 30px;
+    background: url(../img/hill.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 484px;
+
 }
+
 .main-title{
     color: white;
-    line-height: 30px;
     font-size: 30px;
-    margin-bottom: 100px;
     display: inline-block;
     width: 100%;
+    line-height: 30px;
+
 }
 .bottom-links {
     display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    left: 20px;    
 }
 .link {
     color: white;
@@ -40,10 +55,11 @@ body{
 }
 .right-column {
     padding: 60px;
-    float: left;
     width: 60%;
     background-color: #fff;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .close {
     display: inline-block;
@@ -52,14 +68,10 @@ body{
     text-align: center;
     line-height: 54px;
     font-size: 30px;
-    float: right;
     position: absolute;
     top: 0;
     right: 0;
 }
-
-
-
 .form {
     display: inline-block;
     width: 100%;
@@ -73,7 +85,6 @@ symbol {
     width: 100%;
     margin-bottom: 30px;
 }
-
 .form > .form-row > label {
     display: inline-block;
     width: 100%;
@@ -81,9 +92,7 @@ symbol {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 20px;
-
 }
-
 .form > .form-row > input {
     display: inline-block;
     width: 100%;
@@ -92,7 +101,6 @@ symbol {
     border: none;
     border-bottom: solid 2px lightgrey;
 }
-
 .form > .form-row > button {
     float: left;
     background-color: #015CDA;
@@ -105,18 +113,17 @@ symbol {
     border-radius: 20px;
     cursor: pointer;
 }
-
 .form > .form-row > span {
     float: left;
-    padding: 10px 0px 10px 20px;
-    line-height: 15px;
+    padding: 10px;
+    line-height: 20px;
     font-size: 18px;
+    margin-left: 10px;;
 }
-
 .form > .form-row > a {
     float: left;
-    line-height: 15px;
-    padding: 10px 10px 10px 5px;
+    line-height: 20px;
+    padding: 10px;
     font-size: 18px;
     color: #015CDA;
     text-decoration: none;
