@@ -15,17 +15,25 @@ body{
     margin-left: calc((100% - 800px) / 2);
     margin-right: calc((100% - 800px) / 2);
     margin-top: 100px;
+    position: relative;
+
 }
 .left-column {
     display: inline-block;
-    float: left;
     width: 40%;
     background-color: #0051a9;
     padding: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    text-align: center;
+    height: 484px;
+    margin-top: 27px;
+    
 }
+
 .main-title{
     color: white;
-    line-height: 30px;
     font-size: 30px;
     margin-bottom: 100px;
     display: inline-block;
@@ -33,6 +41,12 @@ body{
 }
 .bottom-links {
     display: inline-block;
+    bottom: 20px;
+    right: 30px;
+    top: 30px;
+    left: 0;
+    margin-top: 250px;
+    
 }
 .link {
     color: white;
@@ -40,10 +54,11 @@ body{
 }
 .right-column {
     padding: 60px;
-    float: left;
     width: 60%;
     background-color: #fff;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .close {
     display: inline-block;
@@ -108,15 +123,16 @@ symbol {
 
 .form > .form-row > span {
     float: left;
-    padding: 10px 0px 10px 20px;
-    line-height: 15px;
+    padding: 10px;
+    line-height: 20px;
     font-size: 18px;
+    margin-left: 10px;;
 }
 
 .form > .form-row > a {
     float: left;
-    line-height: 15px;
-    padding: 10px 10px 10px 5px;
+    line-height: 20px;
+    padding: 10px;
     font-size: 18px;
     color: #015CDA;
     text-decoration: none;
